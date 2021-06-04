@@ -34,7 +34,7 @@ class Editarproduto extends Component {
     componentDidMount() {
         const { id } = this.props.match.params;
  
-        fetch(`https://backend-produto.herokuapp.com/produto/${id}`)
+        fetch(`${process.env.REACT_APP_API_URL}/${id}`)
             .then(data => {
                 data.json().then(data => {
                     if (data.error) {
@@ -155,7 +155,7 @@ class Editarproduto extends Component {
     handleSubmit = event => {
         const { id } = this.state.produto;
  
-        fetch(`https://backend-produto.herokuapp.com/produto/${id}`, {
+        fetch(`${process.env.REACT_APP_API_URL}/${id}`, {
             method: "put",
             body: JSON.stringify(this.state.produto),
             headers: {
