@@ -54,7 +54,7 @@ export default class Main extends Component {
                                 <td>{produto.ativo ? "Sim" : "Não"}</td>
                                 <td> <Link to={`/produtos/${produto.id}`}> <button type="button" class="btn btn-primary">Detalhes</button> </Link> </td>
                                 <td> <Link to={`/editarproduto/${produto.id}`}> <button type="button" class="btn btn-warning">Atualizar</button> </Link></td>
-                                <td> <button type="button" class="btn btn-danger">Excluir</button> </td>
+                                <td> <Link to={`/deletarproduto/${produto.id}`}> <button type="button" class="btn btn-danger">Excluir</button> </Link></td>
                             </tr>
                         ))}
                     </tbody>
