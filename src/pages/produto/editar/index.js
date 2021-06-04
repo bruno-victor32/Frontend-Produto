@@ -110,7 +110,7 @@ class Editarproduto extends Component {
                                 id="quantidadeEstoque"
                                 name="quantidadeEstoque"
                                 placeholder="Quantidade em Estoque"
-                                minLength="3"
+                                minLength="1"
                                 maxLength="100"
                                 required
                                 value={this.state.produto.quantidadeEstoque}

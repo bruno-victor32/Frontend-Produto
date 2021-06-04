@@ -92,7 +92,7 @@ class Criarproduto extends Component {
                                 id="quantidadeEstoque"
                                 name="quantidadeEstoque"
                                 placeholder="Qtd em Estoque"
-                                minLength="3"
+                                minLength="1"
                                 maxLength="100"
                                 required
                                 value={this.state.produto.quantidadeEstoque}
